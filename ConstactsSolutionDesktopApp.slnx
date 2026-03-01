@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="ConstactsSolutionDesktopApp.csproj" />
+  <Project Path="../ContactsSolutionConsoleApp/Libraries/ContactsSolution.buisness/ContactsSolution.Buisiness.csproj" />
+  <Project Path="../ContactsSolutionConsoleApp/Libraries/ContactsSolution.Data/ContactsSolution.DataAccess.csproj" />
+  <Project Path="ConstactsSolution.Presentation.csproj" />
 </Solution>

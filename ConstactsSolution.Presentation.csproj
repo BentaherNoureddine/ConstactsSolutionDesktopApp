@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddNewAndEditContactForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddNewAndEditContactForm.Designer.cs">
+      <DependentUpon>AddNewAndEditContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListAllContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListAllContacts.Designer.cs">
+      <DependentUpon>FormListAllContacts.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewAndEditContactForm.resx">
+      <DependentUpon>AddNewAndEditContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListAllContacts.resx">
+      <DependentUpon>FormListAllContacts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsSolutionConsoleApp\Libraries\ContactsSolution.buisness\ContactsSolution.Buisiness.csproj">
+      <Project>{20ddfabd-3ab4-4bf9-bbc2-982c238788f1}</Project>
+      <Name>ContactsSolution.Buisiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
